@@ -2,6 +2,8 @@ variable "name" {
   default = ""
 }
 
+variable "count" {}
+
 variable "vpc_id" {}
 
 variable "cidr_block" {

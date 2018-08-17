@@ -9,3 +9,5 @@ variable "availability_zone" {}
 variable "create_vpc" {}
 
 variable "env" {}
+
+variable "subnet_count" {}
