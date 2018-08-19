@@ -1,12 +1,12 @@
-variable "name" {
+variable "subnet_name" {
   default = ""
 }
 
-variable "count" {}
+#variable "subnet_count" {}
 
 variable "vpc_id" {}
 
-variable "cidr_block" {
+variable "subnet_cidr_block" {
   type = "list"
   default = ""
 }
