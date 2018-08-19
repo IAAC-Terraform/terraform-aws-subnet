@@ -2,8 +2,6 @@ variable "subnet_name" {
   default = ""
 }
 
-#variable "subnet_count" {}
-
 variable "vpc_id" {}
 
 variable "subnet_cidr_block" {
