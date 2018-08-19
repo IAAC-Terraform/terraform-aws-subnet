@@ -1,5 +1,5 @@
 resource "aws_subnet" "subnet" {
-  count      = "${var.create_vpc ? var.count : 0}"
+  count      = "${var.create_vpc ? length(var.cidr_block) : 0}"
   vpc_id     = "${var.vpc_id}"
   availability_zone = "${element(var.availability_zone, count.index)}"
   cidr_block = "${element(var.cidr_block, count.index)}"
