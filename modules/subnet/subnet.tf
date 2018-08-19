@@ -9,4 +9,3 @@ resource "aws_subnet" "subnet" {
     env  = "${var.env}"
   }
 }
-

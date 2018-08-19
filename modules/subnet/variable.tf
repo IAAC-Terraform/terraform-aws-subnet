@@ -7,6 +7,7 @@ variable "count" {}
 variable "vpc_id" {}
 
 variable "cidr_block" {
+  type = "list"
   default = ""
 }
 
@@ -19,5 +20,6 @@ variable "create_vpc" {
 }
 
 variable "availability_zone" {
+  type = "list"
   default = ""
 }
