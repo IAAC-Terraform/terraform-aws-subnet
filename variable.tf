@@ -6,9 +6,7 @@ variable "subnet_cidr_block" {
     default = ""
 }
 
-variable "availability_zone" {
-    type = "list"
-}
+variable "availability_zone" {}
 
 variable "create_vpc" {}
 
