@@ -1,17 +1,25 @@
-variable "subnet_name" {}
+variable "name" {
+  default = ""
+}
+
+variable "count" {}
 
 variable "vpc_id" {}
 
-variable "subnet_cidr_block" {
-    type = "list"
+variable "cidr_block" {
+  type = "list"
+  default = ""
+}
+
+variable "env" {
+  default = ""
+}
+
+variable "create_vpc" {
+  default = ""
 }
 
 variable "availability_zone" {
-    type = "list"
+  type = "list"
+  default = ""
 }
-
-variable "create_vpc" {}
-
-variable "env" {}
-
-variable "subnet_count" {}
