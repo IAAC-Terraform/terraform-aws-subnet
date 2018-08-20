@@ -1,19 +1,19 @@
 output "subnetid" {
-  value = "${element(concat(aws_subnet.subnet.*.id, list("")), 0)}"
+  value = "${aws_subnet.subnet.*.id}"
 }
 
 output "subnet-az" {
-  value = "${element(concat(aws_subnet.subnet.*.availability_zone, list("")), 0)}"
+  value = "${aws_subnet.subnet.*.availability_zone}"
 }
 
 output "subnet-cidr" {
-  value = "${element(concat(aws_subnet.subnet.*.cidr_block, list("")), 0)}"
+  value = "${aws_subnet.subnet.*.cidr_block}"
 }
 
 output "subnet-arn" {
-  value = "${element(concat(aws_subnet.subnet.*.arn, list("")), 0)}"
+  value = "${aws_subnet.subnet.*.arn}"
 }
 
 output "subnet-associated-vpc" {
-  value = "${element(concat(aws_subnet.subnet.*.vpc_id, list("")), 0)}"
+  value = "${aws_subnet.subnet.*.vpc_id}"
 }
